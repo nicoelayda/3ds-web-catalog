@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+    <link href="{{ site.baseurl }}/apple-touch-icon.png" rel="apple-touch-icon-precomposed" sizes="152x152">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+    <main>
+      {{ content }}
+    </main>
+
+  </body>
+
+</html>

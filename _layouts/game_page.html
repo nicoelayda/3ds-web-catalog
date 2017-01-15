@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>
+	Size (bytes): {{ page.size_bytes }}<br />
+	Size (blocks): {{ page.size_blocks }}<br />	
+</p>
+
+<a href="{{ site.cdn_path }}{{ page.filename }}">Download</a>
+
+{% assign dl_path = "" | append: site.cdn_path | append: page.filename %}
+{% qr dl_path %}
