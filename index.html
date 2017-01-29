@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<h1>Nintendo 3DS Catalog</h1>
-
-<ul>
+<ul class="list-group">
 {% for game in site.data.games %}
-  <li><a href="{{ game.title | datapage_url: 'game' }}">{{game.title}}</a></li>
+  <li class="list-group-item"><a href="{{ game.title | datapage_url: 'game' }}">{{game.title}}</a></li>
 {% endfor %}
 </ul>
