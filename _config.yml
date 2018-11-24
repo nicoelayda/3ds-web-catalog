@@ -20,7 +20,7 @@ cdn_path: "/cdn/3ds-games/"  # subpath of where the game files are stored
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
